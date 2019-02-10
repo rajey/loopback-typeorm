@@ -7,9 +7,9 @@
   "database": "typeorm",
   "synchronize": true,
   "logging": false,
-  "entities": ["src/models/**/*.js"],
-  "migrations": ["src/migration/**/*.js"],
-  "subscribers": ["src/subscriber/**/*.js"],
+  "entities": ["src/models/**/*.ts"],
+  "migrations": ["src/migration/**/*.ts"],
+  "subscribers": ["src/subscriber/**/*.ts"],
   "cli": {
     "entitiesDir": "src/models",
     "migrationsDir": "src/migration",

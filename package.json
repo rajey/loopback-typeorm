@@ -28,7 +28,7 @@
     "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
     "migrate": "node ./dist/migrate",
     "prestart": "npm run build",
-    "start": "npm run build && node .",
+    "start": "npm run build && ts-node .",
     "prepublishOnly": "npm run test"
   },
   "repository": {
@@ -54,6 +54,7 @@
     "@loopback/rest-explorer": "^1.1.8",
     "@loopback/service-proxy": "^1.0.8",
     "pg": "^7.8.0",
+    "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.12"
   },
   "devDependencies": {
