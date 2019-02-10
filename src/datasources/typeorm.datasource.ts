@@ -10,9 +10,6 @@ export class TypeORMDataSource {
   constructor() {}
 
   async connect(): Promise<Connection> {
-    if (this.connection) {
-      return this.connection;
-    }
     this.connection = await createConnection();
     return this.connection;
   }

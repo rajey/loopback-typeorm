@@ -28,7 +28,7 @@
     "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
     "migrate": "node ./dist/migrate",
     "prestart": "npm run build",
-    "start": "node .",
+    "start": "npm run build && node .",
     "prepublishOnly": "npm run test"
   },
   "repository": {
