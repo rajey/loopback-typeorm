@@ -1,6 +1,7 @@
 import {LoopbackTypeormApplication} from './application';
 import {ApplicationConfig} from '@loopback/core';
 import {TypeORMDataSource} from './datasources/typeorm.datasource';
+import 'reflect-metadata';
 
 export {LoopbackTypeormApplication};
 
